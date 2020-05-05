@@ -1,0 +1,51 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.Header{
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align:center;
+    font-size:66px;
+    background-color:lightcoral;
+    width:50%;
+    margin:auto;
+}
+
+.OptionContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1em;
+    margin: auto;
+}
+
+.Option {
+    text-align: center;
+    max-width: 600px;
+    min-width: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lightblue;
+}
+
+.Option:hover
+{
+    background-color: deepskyblue;
+}

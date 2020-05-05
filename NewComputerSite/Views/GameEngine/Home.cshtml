@@ -1,0 +1,40 @@
+﻿
+@section AddToHead{
+    <link href="@Url.Content("~/Content/GameEngine.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/Scripts/p5.js"></script>
+    <script type="text/javascript" src="~/Scripts/sketch.js"></script>
+}
+
+@{
+    ViewBag.Title = "Game Engine";
+}
+
+
+<h2>Game Engine</h2>
+
+<div id="game-window">
+    <!-- sketch will go here! -->
+</div>
+
+<div class="OptionContainer">
+    <div class="action">
+        <span>&emsp;&emsp;</span>
+        <textarea style="background-color:black;" cols='60' rows='8' id="output">Enter 'h' to show commands.</textarea>
+        <br>
+        <span>cjgs: </span>
+        <input style="background-color:black;" size="60" type="text" id="input" onkeypress="return command(event);">
+    </div>
+
+
+    <div>
+        <label>Objects:</label>
+
+        <select style="background-color:black;" id="objectSelect">
+        </select>
+        <br />
+        <span>Object Name</span>
+        <input style="background-color:black;"type="text" id="objectNameInput"/>
+        <button style="background-color:black;" onclick="AddObject();">Add Object</button>
+    </div>
+</div>
+
